@@ -1,0 +1,56 @@
+# AI-Based Cognitive Learning Pattern Analyzer (Full Startup Platform)
+
+Refactoring to a production-ready platform with MongoDB, a premium Light Theme, and a multi-language Practice Hub (C, Python, Java).
+
+## User Review Required
+
+> [!IMPORTANT]
+> - **Database**: **MongoDB** will be the single source of truth for users and cognitive data.
+> - **Look & Feel**: **Premium Light Theme** using Tailwind's Zinc and Blue color scales.
+> - **Navigation**: Dedicated **Left Sidebar** for core app features and a **Top-Right Dropdown** for profile management.
+> - **Active Learning**: Practice modules for **C, Python, and Java** with a custom code execution simulator.
+> - **Dashboard**: Unified view with **Wallet Summary** and **Cognitive Analytics**.
+
+## Proposed Changes
+
+### [Backend]
+Summary: Implement async MongoDB integration and multi-language support.
+
+#### [NEW] [database.py](file:///d:/Hackathon%20AND%20PROJECTS/Sathyabama%20Hackathon/backend/database.py)
+Switch to `motor` for async MongoDB connection.
+
+#### [NEW] [schemas.py](file:///d:/Hackathon%20AND%20PROJECTS/Sathyabama%20Hackathon/backend/schemas.py)
+Pydantic models for User, Attempt, Challenge, and Wallet data.
+
+#### [MODIFY] [main.py](file:///d:/Hackathon%20AND%20PROJECTS/Sathyabama%20Hackathon/backend/main.py)
+Update all endpoints to use MongoDB and reflect new platform structure.
+
+---
+
+### [Frontend]
+Summary: Redesign for Light Theme and implement the full platform navigation.
+
+#### [NEW] [LandingPage.jsx](file:///d:/Hackathon%20AND%20PROJECTS/Sathyabama%20Hackathon/frontend/src/pages/LandingPage.jsx)
+A professional marketing front-page for CareerByte.
+
+#### [MODIFY] [Layout.jsx](file:///d:/Hackathon%20AND%20PROJECTS/Sathyabama%20Hackathon/frontend/src/components/Layout.jsx)
+Implement Sidebar navigation and Top Bar with Profile Dropdown.
+
+#### [MODIFY] [Dashboard.jsx](file:///d:/Hackathon%20AND%20PROJECTS/Sathyabama%20Hackathon/frontend/src/pages/Dashboard.jsx)
+Integrate Wallet summary, Credit badge, and clean Light Theme analytics.
+
+#### [NEW] [PracticeHub.jsx](file:///d:/Hackathon%20AND%20PROJECTS/Sathyabama%20Hackathon/frontend/src/pages/PracticeHub.jsx)
+Language selection (C, Python, Java) for practice sessions.
+
+---
+
+## Verification Plan
+
+### Automated Tests
+- Test MongoDB connection and CRUD operations.
+- Verify JWT Auth persistence with the new database.
+
+### Manual Verification
+- Walk through the full flow: Landing -> Register -> Dashboard -> Practice.
+- Verify the "Stress Impact" calculation across multiple languages.
+- Ensure the UI is consistent in Light Mode with no placeholder content.

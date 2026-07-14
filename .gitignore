@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyz
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+venv/
+.venv/
+env/
+*.joblib
+
+# Node.js / Frontend
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.npm/
+.pnpm-store/
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Local scripts
+backend/clear_questions.py
+backend/fix_questions.py
+debug_startup.py
+check_db.py
+/tmp/
+test_hash.py
